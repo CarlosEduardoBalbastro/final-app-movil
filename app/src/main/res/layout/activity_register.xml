@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            style="@style/TituloPrincipal"
+            android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/gris"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/input_fondo"
+            android:textColor="@color/texto_principal"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etApellido"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Apellido"
+            android:textColorHint="@color/gris"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/input_fondo"
+            android:textColor="@color/texto_principal"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:textColorHint="@color/gris"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/input_fondo"
+            android:textColor="@color/texto_principal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo Contraseña con ícono -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Contraseña"
+            android:textColorHint="@color/gris"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="18dp"
+            android:background="@drawable/input_fondo"
+            android:textColor="@color/texto_principal"
+            android:drawableEnd="@drawable/ic_ojo_cerrado"
+            android:drawablePadding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo Confirmar Contraseña con ícono -->
+        <EditText
+            android:id="@+id/etConfirmarPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Confirmar contraseña"
+            android:textColorHint="@color/gris"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="18dp"
+            android:background="@drawable/input_fondo"
+            android:textColor="@color/texto_principal"
+            android:drawableEnd="@drawable/ic_ojo_cerrado"
+            android:drawablePadding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Requisitos de contraseña -->
+        <TextView
+            android:id="@+id/tvRequisitos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La contraseña debe cumplir:"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvLargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mínimo 8 caracteres"
+            android:textSize="12sp"
+            android:textColor="@color/gris"/>
+
+        <TextView
+            android:id="@+id/tvMayuscula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Al menos una mayúscula"
+            android:textSize="12sp"
+            android:textColor="@color/gris"/>
+
+        <TextView
+            android:id="@+id/tvMinuscula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Al menos una minúscula"
+            android:textSize="12sp"
+            android:textColor="@color/gris"/>
+
+        <TextView
+            android:id="@+id/tvNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Al menos un número"
+            android:textSize="12sp"
+            android:textColor="@color/gris"/>
+
+        <TextView
+            android:id="@+id/tvSimbolo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Al menos un símbolo"
+            android:textSize="12sp"
+            android:textColor="@color/gris"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Términos y Condiciones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <CheckBox
+                android:id="@+id/cbTerminos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:minWidth="48dp"
+                android:buttonTint="@color/verde1" />
+
+            <TextView
+                android:id="@+id/tvTerminos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Acepto los Términos y Condiciones y el tratamiento de mis datos personales (tocá para leer)"
+                android:textColor="@color/verde1"
+                android:textSize="13sp"
+                android:minHeight="48dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Registrarme"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/boton_redondeado"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/btnArrepentimiento"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="ME ARREPIENTO / CANCELAR"
+            android:textColor="@color/verde1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/transparent"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:id="@+id/tvInvitado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresar como Invitado"
+            android:textColor="@color/gris"
+            android:textSize="14sp"
+            android:padding="16dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/tvVolverALogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Ya tenés cuenta? Iniciá sesión"
+            android:textColor="@color/verde1"
+            android:textSize="14sp"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+</ScrollView>

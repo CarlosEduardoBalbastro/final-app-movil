@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navbarInclude"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        >
+
+        <!-- Titulo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TituloPrincipal"
+            android:text="Fichas de plantas"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"/>
+
+        <!-- Filtros -->
+        <Spinner
+            android:id="@+id/spinnerCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/spinner_background"
+            android:popupBackground="@color/gris"
+            android:radius="12dp"
+            android:layout_marginBottom="16dp"
+            />
+
+
+        <!-- Fichas -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Lista de fichas de plantas">
+
+            <!-- Contenedor de las fichas -->
+            <LinearLayout
+                android:id="@+id/contenedorEspecies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </ScrollView>
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/navbarInclude"
+        layout="@layout/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

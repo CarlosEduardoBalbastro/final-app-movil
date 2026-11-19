@@ -55,7 +55,7 @@ El desarrollo del repositorio se organiza estrictamente mediante **GitFlow**:
 
 | Integrante | Rol en el Proyecto |
 | :--- | :--- |
-| **Carlos Eduardo Balbastro** | Product Owner / Dev / Tester / Analista de Ciberseguridad |
+| **Carlos Eduardo Balbastro** | Product Owner / Dev |
 | **Ignacio Martín Bentivoglio** | Scrum Master / Dev / Tester / Analista de Ciberseguridad |
 | **Ruben Dario Bosque** | Dev / Tester / Analista de Ciberseguridad |
 | **Kiara Fernandez** | Dev / Tester / Analista de Ciberseguridad |
